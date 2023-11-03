@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fceea7;
+}
+
+.container {
+    text-align: center;
+}
+
+.cake {
+    background-color: #fc9d9a;
+    width: 100px;
+    height: 100px;
+    border-radius: 30%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.candle {
+    background-color: #fffa65;
+    width: 10px;
+    height: 50px;
+    border-radius: 5px;
+    position: absolute;
+    top: -50px;
+    left: 45px;
+}
+
+.flame {
+    width: 40px;
+    height: 60px;
+    background: #f06;
+    position: absolute;
+    top: -60px;
+    left: -15px;
+    border-radius: 70%;
+    opacity: 0;
+    animation: flame 1s infinite alternate ease-in-out;
+}
+
+@keyframes flame {
+    0% {
+        opacity: 0.5;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
+
+.message h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #ff6b6b;
+}
+
+.message p {
+    font-size: 50px;
+    color: #ff6b6b;
+    font-weight: bold;
+}
